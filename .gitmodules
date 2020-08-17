@@ -1,0 +1,3 @@
+[submodule "bowling/bowling/bowling-challenge"]
+	path = bowling/bowling/bowling-challenge
+	url = https://github.com/ROCHAAL/bowling-challenge.git
