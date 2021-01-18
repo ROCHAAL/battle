@@ -1,4 +1,6 @@
 class Student
+attr_reader :on_site
+
 def initialize(name)
   @name = name
   @on_site = false
@@ -12,19 +14,22 @@ def sign_out
   @on_site = false
 end
 
-def on_site?
-  @on_site
-end
+
 
 end
 
 class Cohort
+  attr_reader :students
+
   def initialize
     @students = []
   end
 
-
   def add_student(student)
+    @students.push(student)
+  end
 
+  def count_of_signed_in_students
+      @students.select { |student| student.on_site? }.count
   end
 end
