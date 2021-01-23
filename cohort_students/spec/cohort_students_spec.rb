@@ -26,12 +26,16 @@ end
       cohort.add_student(student)
       expect(cohort.students.length).to eq(1)
     end
-it 'counts the students that are in the site'do
-  cohort = Cohort.new
-  cohort.count_of_signed_in_students
-  expect(cohort.count_of_signed_in_students).to eq(0)
-end
+  it 'counts the students that are in the site'do
+    cohort = Cohort.new
+
+    cohort.count_of_signed_in_students
+    expect(cohort.count_of_signed_in_students).to eq(0)
+
+
 
   end
+
+end
 
 end

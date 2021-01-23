@@ -19,7 +19,7 @@ end
 end
 
 class Cohort
-  attr_reader :students
+  attr_reader :students, :on_site
 
   def initialize
     @students = []
